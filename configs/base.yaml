@@ -1,0 +1,37 @@
+# Edge Fall Detection — Base Configuration
+# Active Blueprint v0.2.0
+
+project:
+  name: "edge-fall-detector"
+  version: "0.2.0-blueprint"
+  description: "Real-time patient fall detection on NVIDIA Jetson"
+
+inference:
+  backend: "mock"
+  model_path: "models/yolo11n-pose.engine"
+  input_size: [640, 640]
+  confidence_threshold: 0.5
+
+temporal:
+  window_size: 10
+  velocity_threshold: 1.5
+  acceleration_threshold: 3.0
+  torso_angle_threshold: 75.0
+  min_consecutive_frames: 3
+  cooldown_ms: 30000
+
+stream:
+  source: "0"
+  fps: 30
+  width: 640
+  height: 480
+
+alert:
+  backend: "console"
+  mqtt_broker: "localhost"
+  mqtt_port: 1883
+  mqtt_topic: "hospital/fall_alerts"
+
+telemetry:
+  log_interval_seconds: 60
+  save_frames_on_alert: false

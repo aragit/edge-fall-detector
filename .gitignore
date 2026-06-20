@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+env/
+ENV/
+build/
+*.egg-info/
+
+# Models
+models/*.pt
+models/*.onnx
+models/*.engine
+models/*.trt
+
+# Data outputs
+data/*.json
+data/*.png
+data/*.csv
+data/*.mp4
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage

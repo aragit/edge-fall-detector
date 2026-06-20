@@ -1,0 +1,22 @@
+# Core
+numpy>=1.24.0
+pydantic>=2.0.0
+
+# Inference backends (optional)
+# onnxruntime-gpu>=1.16.0
+# torch>=2.0.0
+# tensorrt>=8.6.0
+# pycuda>=2022.2.2
+
+# Alert dispatch
+paho-mqtt>=1.6.0
+
+# Telemetry
+psutil>=5.9.0
+
+# Testing
+pytest>=7.3.0
+pytest-asyncio>=0.23.0
+
+# Development
+opencv-python>=4.8.0

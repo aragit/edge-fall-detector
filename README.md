@@ -1,3 +1,15 @@
+<p align="center"><b>Edge ML: Real-Time Patient Fall Detection</b></p>
+
+<p align="center"><sub>NVIDIA Jetson · YOLO-Pose · Temporal Kinematics · MQTT Alerts</sub></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-📐%20Active%20Blueprint-blue" alt="Active Blueprint">
+  <img src="https://img.shields.io/badge/PyTorch-2.0+-red?logo=pytorch" alt="PyTorch">
+  <img src="https://img.shields.io/badge/Python-3.12+-blue?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Tests-14%20passing-brightgreen" alt="Tests">
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT">
+</p>
+
 # 🏥 Edge Fall Detector — Active Blueprint
 
 Real-time patient fall detection on NVIDIA Jetson using YOLOv11-Pose and temporal kinematics. All inference stays on-device — no video leaves the edge.

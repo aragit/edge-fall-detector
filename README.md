@@ -13,7 +13,6 @@
 </p>
 
 ---
-
 Real-time patient fall detection on NVIDIA Jetson using YOLOv11-Pose and temporal kinematics. All inference stays on-device — no video leaves the edge.
 ---
 

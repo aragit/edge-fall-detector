@@ -5,11 +5,11 @@ Real-time patient fall detection on NVIDIA Jetson using YOLOv11-Pose and tempora
 ## Architecture
 
 ```
-┌─────────────┐   ┌────────────────┐   ┌──────────────────┐   ┌──────────────┐
-│ Video Frame │──▶│ Inference      │──▶│ Kinematic State  │──▶│ Alert        │
-│ (OpenCV)    │   │ (Mock/ONNX/TRT)│   │ Machine (window  │   │ (MQTT/Console)│
-└─────────────┘   └────────────────┘   │ vel, accel, angle)│   └──────────────┘
-                                        └──────────────────┘
+┌─────────────┐   ┌────────────────┐   ┌───────────────── ─┐    ┌───────────── ─┐
+│ Video Frame │──▶│ Inference      │──▶│ Kinematic State   │ ──▶│ Alert         │
+│ (OpenCV)    │   │ (Mock/ONNX/TRT)│   │ Machine (window   │    │ (MQTT/Console)│
+└─────────────┘   └────────────────┘   │ vel, accel, angle)│    └──────────── ──┘
+                                       └───────────────── ─┘
 ```
 
 | Layer | Technology | Purpose |

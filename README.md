@@ -11,8 +11,11 @@
   <img src="https://img.shields.io/badge/Tests-14%20passing-brightgreen" alt="Tests">
   <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT">
 </p>
+
 ---
+
 Real-time patient fall detection on NVIDIA Jetson using YOLOv11-Pose and temporal kinematics. All inference stays on-device — no video leaves the edge.
+---
 
 ## Architecture
 
